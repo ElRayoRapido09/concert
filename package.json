@@ -1,0 +1,25 @@
+{
+  "name": "cuarta-pagina",
+  "version": "1.0.0",
+  "description": "Primera vez aprendiendo a utilizar SASS y NPM",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "gulp"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GULP"
+  ],
+  "author": "ElRayoRapido09",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.77.8",
+    "sharp": "^0.33.5"
+  }
+}

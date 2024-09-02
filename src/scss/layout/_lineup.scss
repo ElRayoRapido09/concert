@@ -1,0 +1,58 @@
+@use "bases/variables" as v;
+@use "bases/mixins" as m;
+
+.lineup {
+    background-color: v.$rosa;
+    
+    h3, .dia {
+        color: v.$blanco;
+    }
+
+    .dia {
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+
+.escenarios-contenedor {
+    @include m.contenedor;
+    @include m.tablet {
+        @include m.grid(2rem, 2);
+    }
+}
+
+.escenario {
+    padding-top: 2rem;
+    .nombre-escenario {
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercases;
+    }
+}
+
+.calendario {
+    @include m.removelist;
+    li {
+        padding: 3rem;
+        font-weight: 800;
+        span {
+            font-weight: 300;
+        }
+    }
+}
+
+.bg-amarillo {
+    background-color: v.$amarillo;
+    li:nth-child(odd) {
+        background-color:lighten(v.$amarillo, 10%)
+    }
+}
+
+.bg-verde {
+    background-color: v.$verde;
+    li:nth-child(odd){
+        background-color: lighten(v.$verde, 10%);
+    }
+}
